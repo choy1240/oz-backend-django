@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "oz-backend-django"
+version = "0.1.0"
+description = "커스텀 플랫폼 주문 메뉴"
+authors = ["choy1240 <shield3045@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
