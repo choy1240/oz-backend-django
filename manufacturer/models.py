@@ -10,6 +10,7 @@ class ManuBsn(models.Model):
     user=models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.SET_NULL,
+        null=True,
         related_name="manu_bsn"
     )
 class ManuAccount(models.Model):
@@ -19,5 +20,6 @@ class ManuAccount(models.Model):
     user=models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.SET_NULL,
+        null=True,
         related_name="manu_account"
     )
