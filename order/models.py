@@ -7,3 +7,8 @@ class Order(models.Model):
     description=models.CharField(max_length=200)
     image_url=models.CharField(max_length=2000)
     product_type=models.CharField(max_length=200)
+    user=models.ForeignKey(
+        "User",
+        on_delete=models.SET_NULL,
+        null=True
+    )
